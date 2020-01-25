@@ -11,6 +11,10 @@
             name="aStudent"
             type="com.example.databindingadvance.StudentModel" />
 
+        <variable
+            name="handler"
+            type="com.example.databindingadvance.eventbinding.MethodReferenceEventBinding.EventHandler" />
+
     </data>
 
 
@@ -29,6 +33,17 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:text="@{String.valueOf(aStudent.age)}" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Button"
+            android:onClick="@{handler::handlerClick}"/>
+        <!--or-->
+<!--        <Button-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:text="Button"-->
+<!--            android:onClick="@{handler.handlerClick()}"/>-->
 
     </LinearLayout>
 
