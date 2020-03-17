@@ -9,17 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".eventbinding.MethodReferenceEventBinding">
+        <activity android:name=".eventbinding.ListenerBindingEventHandling">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ObjectBindingActivity">
+        <activity android:name=".eventbinding.MethodReferenceEventBinding">
 
         </activity>
-        <activity android:name=".BindingExpressionActivity"></activity>
+        <activity android:name=".ObjectBindingActivity"></activity>
+        <activity android:name=".BindingExpressionActivity" />
         <activity android:name=".MainActivity" />
     </application>
 
